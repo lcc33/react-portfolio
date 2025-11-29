@@ -18,7 +18,7 @@ export const Contact = () => {
 
     emailjs
       .sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY)
-      .then((result) => {
+      .then(() => {
         alert("Message Sent!");
         setFormData({ name: "", email: "", message: "" });
       })
